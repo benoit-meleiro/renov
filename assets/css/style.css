@@ -81,27 +81,39 @@ header{
 } */
 .text-carou{
     
-    left: 150px;
-    animation: textSlide 2s ease-in-out infinite;
+    left: 10%;
+    top: 15%;
+    animation: textSlide 2s ease-in-out;
 }
-.text-carou h5:first-of-type{
+.text-carou h5{
     font-size: 35px;
     text-transform: uppercase;
     color: white;
     letter-spacing: 5px;
+    margin: 0;
+    font-weight: bold;
 }
+.text-carou h5:last-of-type{
+    color: #edd154;
+}
+/* ++++++++++ hero ++++++++++ */
+strong{
+    font-weight: bold;
+    color: #112E3E;
+}
+
 @keyframes textSlide{
     0%{
         opacity: 0;
-        top:200px
+        top:25%;
     }
-    35%{
+    50%{
         opacity: 1;
-        top: 150px
+        top: 15%;
     }
     95%{
         opacity: 1;
-        top: 150px
+        top: 15%;
     }
     100%{
         opacity: 0;
@@ -152,5 +164,15 @@ footer{
     font-size: 1.5rem;
     color: white;
     margin: 0 5px;
+}
+@media screen and (max-width: 768px){
+      /* TABLETTE */
+      
+}
+@media screen and (max-width: 568px){
+      /* TELEPHONE */
+      .carousel-inner{
+        max-height: 800px;
+    }
 }
 
